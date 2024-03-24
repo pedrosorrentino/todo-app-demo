@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #f5f5f5;
+}
+
+.cl-internal-11ewti4 {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.cl-internal-1cd5e4l {
+  flex-flow: row-reverse;
+}
