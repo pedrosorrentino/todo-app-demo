@@ -5,7 +5,9 @@ import { getTasks } from '@/utils/db';
 
 export default async function IncompletePage() {
   const incompleteTasks = await getTasks(undefined, false);
-
+  if (!incompleteTasks) {
+    return;
+  }
   return (
     <div>
       <TitlePage>Important task</TitlePage>
@@ -13,7 +15,7 @@ export default async function IncompletePage() {
         {incompleteTasks.map((task: any) => {
           return <CardTask key={task.id} task={task} />;
         })}
-        <ModalForm type='add' />
+        <ModalForm />
       </div>
     </div>
   );

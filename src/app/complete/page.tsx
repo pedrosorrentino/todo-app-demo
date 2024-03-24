@@ -16,7 +16,7 @@ export default async function CompletePage() {
         {completedTasks.map((task: any) => {
           return <CardTask key={task.id} task={task} />;
         })}
-        <ModalForm type='add' />
+        <ModalForm />
       </div>
     </div>
   );
