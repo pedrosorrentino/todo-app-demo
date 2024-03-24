@@ -10,7 +10,7 @@ export const SidebarPanel = () => {
   const pathname = usePathname();
   return (
     <div className='bg-slate-300 sm:w-3/12 lg:w-2/12 sm:h-svh'>
-      <div className='pt-5 flex justify-center font-semibold text-xl ml-4'>
+      <div className='pt-5 flex justify-center font-semibold text-xl'>
         <SignedIn>
           <UserButton afterSignOutUrl='/' showName />
         </SignedIn>
